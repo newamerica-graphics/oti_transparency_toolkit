@@ -19,7 +19,8 @@ class DataTable extends React.Component {
       title,
       subtitle,
       source,
-      showPagination
+      showPagination,
+      defaultPageSize
     } = this.props;
 
     return (
@@ -28,7 +29,7 @@ class DataTable extends React.Component {
         subtitle={subtitle}
         source={source}
         width={1200}
-        height={1000}
+        height="100%"
       >
         {this.props.children}
         <ReactTable
@@ -38,6 +39,7 @@ class DataTable extends React.Component {
           showPagination={showPagination ? showPagination : false}
           showPageSizeOptions={false}
           PaginationComponent={Pagination}
+          defaultPageSize={defaultPageSize || 20}
         />
       </ChartContainer>
     );
