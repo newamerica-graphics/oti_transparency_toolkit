@@ -12,7 +12,7 @@ const CheckMark = props => (
     style={{
       ...props.style,
       fill: "none",
-      stroke: "#2dbbb3",
+      stroke: "#22C8A3",
       strokeLinecap: "square",
       strokeWidth: "4px",
       width: "auto",
