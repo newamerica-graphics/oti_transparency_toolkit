@@ -12,7 +12,7 @@ const CheckMark = props => (
     style={{
       ...props.style,
       fill: "none",
-      stroke: "#22C8A3",
+      stroke: "#333",
       strokeLinecap: "square",
       strokeWidth: "4px",
       width: "auto",
@@ -86,7 +86,7 @@ const columnCreator = d => {
       accessor: d,
       Cell: CellRenderer,
       show: d === "Link" ? false : d === "Company Type" ? false : true,
-      width: 150,
+      minWidth: 200,
       sortable: false
     };
   });
